@@ -1,0 +1,13 @@
+# Chaves-Montero et al. (2026)
+# add arxiv
+desi_dr1_p1d_cobaya_likelihood.like_lya_p1d.Like_lya_p1d:
+  params:
+    delta2star_mean: 0.379
+    delta2star_std: 0.032
+    nstar_mean: -2.309
+    nstar_std: 0.019
+    correlation: -0.1738
+    zstar: 3.0
+    kstar_kms: 0.009
+    # Speed in evaluations/second (after theory inputs calculated)
+    speed: 30000

@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cobaya_lya_p1d"
+version="2026.0.0"
+authors = [
+    { name="Jonas Chaves-Montero", email="jchaves@ifae.es" },
+]
+maintainers = [
+    { name="Jonas Chaves-Montero", email="jchaves@ifae.es" },
+]
+description = "External likelihood for Cobaya containing P1D cosmological constraints"
+readme = "README.md"
+keywords = [
+    "Lyman-alpha", "Cosmology", "Power Spectrum", "Emulator",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "cobaya>=3.5.0",
+    "numpy>=1.24.4",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific :: Cosmology/Astrophysics",
+]
+
+[tool.setuptools.packages.find]
+include = ["cobaya_lya_p1d"]
+namespaces = false
+
+[project.urls]
+Homepage="https://github.com/igmhub/cobaya_lya_p1d"
+Repository="https://github.com/igmhub/cobaya_lya_p1d.git"
+Issues="https://github.com/igmhub/cobaya_lya_p1d/issues"
