@@ -1,7 +1,14 @@
-# Chaves-Montero et al. (2026)
-# add arxiv
+# Example Cobaya input file for testing.
+# Run with: cobaya-run example.yaml
+#
+# This setup samples the scalar spectral index ns using the likelihood
+# defined in this file. Cosmological parameters that are not explicitly
+# specified are taken from the default settings of the Boltzmann solver.
+# The values of the likelihood parameters are the best-fitting ones to 
+# DESI DR1 data (Chaves-Montero et al. 2026)
+
 likelihood:
-  desi_dr1_p1d_cobaya_likelihood.like_lya_p1d.Like_lya_p1d:
+  cobaya_lya_p1d.cobaya_lya_p1d.Cobaya_lya_p1d:
     delta2star_mean: 0.379
     delta2star_std: 0.032
     nstar_mean: -2.309
@@ -9,17 +16,18 @@ likelihood:
     correlation: -0.1738
     zstar: 3.0
     kstar_kms: 0.009
-    # Speed in evaluations/second (after theory inputs calculated)
-    speed: 30000
+
+theory:
+  camb:
 
 params:
-  H0:
+  H0: 67.77
+  ns:
     prior:
-      min: 65
-      max: 75
-    latex: H_0
+      min: 0.8
+      max: 1.2
 
 sampler:
-  mcmc:
+  mcmc: 
 
-output: out/results
+output: example/results
