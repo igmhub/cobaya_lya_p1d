@@ -31,6 +31,12 @@ cobaya_lya_p1d.cobaya_lya_p1d.Cobaya_lya_p1d:
     speed: 30000
 ```
 
+To check that everything works as expected, you can run:
+
+```console
+$ cobaya-run cobaya_lya_p1d/example.yaml
+```
+
 You can also see the example in the [tutorial notebook](https://github.com/igmhub/cup1d/blob/main/notebooks/tutorials/tutorial_cobaya_likelihood.ipynb).
 
 See Equations 1 and 2 from Chaves-Montero et al. 2026 for the definitions of delta2star and nstar, and the [Cobaya documentation](https://cobaya.readthedocs.io/en/latest/) for instructions on installing and using Cobaya.
