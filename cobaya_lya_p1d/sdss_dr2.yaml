@@ -1,0 +1,28 @@
+# Compressed Lyman-alpha forest constraints from McDonald et al. (2006)
+# (arXiv:https://arxiv.org/abs/astro-ph/0405013)
+
+# Mean value of the dimensionless power-spectrum amplitude
+# Delta^2(k) evaluated at the pivot scale k_star and redshift z_star
+delta2star_mean: 0.47
+
+# 1 sigma uncertainty on Delta^2_star
+delta2star_std: 0.06
+
+# Mean value of the local spectral slope at the pivot scale
+nstar_mean: -2.3
+
+# 1 sigma uncertainty on n_star
+nstar_std: 0.055
+
+# Correlation coefficient between Delta^2_star and n_star
+correlation: 0.6
+
+# Pivot redshift at which the compressed parameters are defined
+zstar: 3.0
+
+# Pivot scale in velocity units (km/s) used for the local power-spectrum fit
+kstar_kms: 0.009
+
+# Approximate likelihood evaluation speed (calls per second),
+# used by Cobaya for scheduling and performance optimization
+speed: 30000
