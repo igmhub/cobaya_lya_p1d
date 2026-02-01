@@ -5,7 +5,7 @@
 # defined in this file. Cosmological parameters that are not explicitly
 # specified are taken from the default settings of the Boltzmann solver.
 # The values of the likelihood parameters are the best-fitting ones to 
-# DESI DR1 data (Chaves-Montero et al. 2026)
+# DESI DR1 data (Chaves-Montero et al. 2026, https://arxiv.org/abs/2601.21432)
 
 likelihood:
   cobaya_lya_p1d.cobaya_lya_p1d.Cobaya_lya_p1d:

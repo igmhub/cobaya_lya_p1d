@@ -1,6 +1,6 @@
 # Lya P1D likelihood for Cobaya
 
-External likelihood for [Cobaya](https://github.com/CobayaSampler/cobaya) containing Lya P1D cosmological constraints, including those from the DESI DR1 analysis (Chaves-Montero et al. 2026).
+External likelihood for [Cobaya](https://github.com/CobayaSampler/cobaya) containing Lya P1D cosmological constraints from multiple analyses, including the results from the DESI DR1 analysis (Chaves-Montero et al. 2026, https://arxiv.org/abs/2601.21432).
 
 ## How to use
 
@@ -37,8 +37,6 @@ To check that everything works as expected, you can run:
 $ cobaya-run cobaya_lya_p1d/example.yaml
 ```
 
-You can also see the example in the [tutorial notebook](https://github.com/igmhub/cup1d/blob/main/notebooks/tutorials/tutorial_cobaya_likelihood.ipynb).
-
 See Equations 1 and 2 from Chaves-Montero et al. 2026 for the definitions of delta2star and nstar, and the [Cobaya documentation](https://cobaya.readthedocs.io/en/latest/) for instructions on installing and using Cobaya.
 
-### If you use this likelihood please cite Chaves-Montero et al. 2026
+### If you use this likelihood please cite Chaves-Montero et al. 2026 (https://arxiv.org/abs/2601.21432)
