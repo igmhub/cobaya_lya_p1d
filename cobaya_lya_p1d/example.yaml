@@ -1,9 +1,7 @@
 # Example Cobaya input file for testing.
 # Run with: cobaya-run example.yaml
 #
-# This setup samples the scalar spectral index ns using the likelihood
-# defined in this file. Cosmological parameters that are not explicitly
-# specified are taken from the default settings of the Boltzmann solver.
+# This setup samples As and ns using the likelihood defined in this file. 
 # The values of the likelihood parameters are the best-fitting ones to 
 # DESI DR1 data (Chaves-Montero et al. 2026, https://arxiv.org/abs/2601.21432)
 
@@ -22,10 +20,17 @@ theory:
 
 params:
   H0: 67.77
+  As: 
+    prior:
+      min: 0.5e-9
+      max: 4.0e-9
+  mnu: 0.
   ns:
     prior:
       min: 0.8
       max: 1.2
+  omch2: 0.119
+  ombh2: 0.02226
 
 sampler:
   mcmc: 
